@@ -1,0 +1,35 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>com.hua</groupId>
+		<artifactId>charset-entire</artifactId>
+		<version>0.0.1</version>
+	</parent>	
+	<artifactId>charset-detector</artifactId>
+	<packaging>jar</packaging>
+	<name>charset-detector</name>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		
+		<charset.version>0.0.1</charset.version>
+		<jchardet.version>1.0</jchardet.version>		
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>com.hua</groupId>
+			<artifactId>charset</artifactId>
+			<version>${charset.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>net.sourceforge.jchardet</groupId>
+			<artifactId>jchardet</artifactId>
+			<version>${jchardet.version}</version>
+		</dependency>
+		
+	</dependencies>
+
+</project>
